@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula el dia de año</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container w-75 h-50 border border-primary rounded-3 p-3 mb-2 bg-light text-dark">
+        <h5 class="container my-3 display-6">Calculadora de dias festivos</h5>
+        
+        <div class="row gap-3 container mx-auto">
+            <input class="col-lg border border-warning" id="dia" type="number" placeholder="día">
+            <input class="col-lg border border-warning" id="mes" type="number" placeholder="mes">
+            <input class="col-lg border border-warning" id="anio" text="number" placeholder="año">
+        </div>
+        <div class="text-center my-3">
+            <button class="btn-primary btn" onclick="calcularFecha()">Calcular</button>
+        </div>
+        <div class="row mx-auto my-lg-4 w-50">
+            <input class="col-lg border border-warning" type="text" readonly placeholder="resultado" id="respuesta" >
+        </div>
+
+   </div>
+   <script src="./funciones.js"></script>
+</body>
+</html>
